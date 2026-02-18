@@ -1,3 +1,8 @@
+![Node.js](https://img.shields.io/badge/Node.js-Backend-green)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)
+![License](https://img.shields.io/badge/License-MIT-blue)
+![Status](https://img.shields.io/badge/Status-Active-success)
+
 # 🚀 Disk Scheduling Visualizer
 
 A Full-Stack Disk Scheduling Algorithm Simulator with interactive visualization, performance comparison, and animated disk head traversal.
