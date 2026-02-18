@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Disk Scheduling Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Disk Scheduling Visualizer</h1>
+
+<div class="container">
+    <input type="text" id="requests" placeholder="Enter requests (95,180,34,119)">
+    <input type="number" id="head" placeholder="Initial Head Position">
+
+    <button onclick="calculate()">Run Simulation</button>
+    <p id="error" style="color: #ff4c4c; font-weight: bold;"></p>
+
+    <div id="results"></div>
+
+    <table id="resultTable">
+        <thead>
+            <tr>
+                <th>Algorithm</th>
+                <th>Total Head Movement</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <h2>Algorithm Time Complexity</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Algorithm</th>
+                <th>Time Complexity</th>
+                <th>Starvation Risk</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>FCFS</td>
+                <td>O(n)</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>SSTF</td>
+                <td>O(n²)</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>SCAN</td>
+                <td>O(n log n)</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>C-SCAN</td>
+                <td>O(n log n)</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>LOOK</td>
+                <td>O(n log n)</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>C-LOOK</td>
+                <td>O(n log n)</td>
+                <td>No</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <canvas id="chart"></canvas>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
