@@ -48,3 +48,8 @@ A Full-Stack Disk Scheduling Algorithm Simulator with interactive visualization,
 
 ---
 
+## 📸 Preview
+
+![Project Preview](screenshot.png)
+
+---
