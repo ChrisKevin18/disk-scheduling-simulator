@@ -35,4 +35,14 @@ A Full-Stack Disk Scheduling Algorithm Simulator with interactive visualization,
 | Algorithm | Time Complexity | Starvation Risk |
 |-----------|-----------------|----------------|
 | FCFS      | O(n)            | No             |
-|
+| SSTF      | O(n²)           | Yes            |
+| SCAN      | O(n log n)      | No             |
+| C-SCAN    | O(n log n)      | No             |
+| LOOK      | O(n log n)      | No             |
+| C-LOOK    | O(n log n)      | No             |
+
+---
+
+## ▶ How to Run
+
+### Backend
